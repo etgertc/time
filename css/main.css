@@ -1,0 +1,141 @@
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.asosiy {
+  width: 300px;
+  height: 300px;
+  background-color: #ffff;
+  -webkit-border-radius: 30%;
+          border-radius: 30%;
+  border: 5px solid black;
+  position: relative;
+}
+
+.raqam {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transform: rotate(var(--rotation));
+      -ms-transform: rotate(var(--rotation));
+          transform: rotate(var(--rotation));
+  font-size: 2rem;
+}
+
+.raqam1 {
+  --rotation: 30deg;
+}
+
+.raqam2 {
+  --rotation: 60deg;
+}
+
+.raqam3 {
+  --rotation: 90deg;
+}
+
+.raqam4 {
+  --rotation: 120deg;
+}
+
+.raqam5 {
+  --rotation: 150deg;
+}
+
+.raqam6 {
+  --rotation: 180deg;
+}
+
+.raqam7 {
+  --rotation: 210deg;
+}
+
+.raqam8 {
+  --rotation: 240deg;
+}
+
+.raqam9 {
+  --rotation: 270deg;
+}
+
+.raqam10 {
+  --rotation: 300deg;
+}
+
+.raqam11 {
+  --rotation: 330deg;
+}
+
+.mi {
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 10px;
+  height: 148px;
+  background-color: black;
+  -webkit-border-top-left-radius: 10px;
+          border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+          border-top-right-radius: 10px;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) rotate(-webkit-calc(var(--rotation)*1deg));
+      -ms-transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+          transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.asosiy::after {
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.mi.sekund {
+  width: 5px;
+  height: 45%;
+  background-color: red;
+  border: 1px solid #ffff;
+  --rotation: 355;
+}
+
+.mi.daqiqa {
+  width: 8px;
+  height: 45%;
+  background-color: black;
+  border: 1px solid black;
+}
+
+.mi.soat {
+  width: 12px;
+  height: 38%;
+  background-color: black;
+  border: 1px solid #000;
+}
